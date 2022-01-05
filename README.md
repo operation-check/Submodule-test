@@ -42,6 +42,9 @@ From https://github.com/operation-check/GitHub-Wiki-test-public
 Submodule path 'GitHub-Wiki-test-public': checked out 'bb20d0d36411cd0f276af884310140831401d558'
 ```
 
+GitHub上の表示
+![image](https://user-images.githubusercontent.com/85093305/148143221-091aeb52-9c30-4767-bfab-6a6f2ac64c98.png)
+    
 ※対象がpublicの場合はあまり難しい感じではなかった。
   対象がprivateの場合については別途確認をする。
   また、組み込み先がprivateの場合も別途確認を実施する。
