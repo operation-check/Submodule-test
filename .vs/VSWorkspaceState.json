@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\sub-m-test"
   ],
   "SelectedNode": "\\webapp.sln",
   "PreviewInSolutionExplorer": false
