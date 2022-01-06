@@ -1,0 +1,3 @@
+[submodule "sub-m-test"]
+	path = sub-m-test
+	url = https://github.com/operation-check/sub-m-test.git
