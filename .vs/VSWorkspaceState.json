@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows",
-    "\\sub-m-test"
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\webapp.sln",
+  "SelectedNode": "\\sub-m-test-pub",
   "PreviewInSolutionExplorer": false
 }
