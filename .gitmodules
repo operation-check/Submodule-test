@@ -4,3 +4,6 @@
 [submodule "sub-m-test-pvt"]
 	path = sub-m-test-pvt
 	url = https://github.com/operation-check/sub-m-test-pvt.git
+[submodule "packages.helpers"]
+	path = packages.helpers
+	url = https://github.com/zLandgraf/packages.helpers.git
