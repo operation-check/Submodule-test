@@ -3,6 +3,7 @@
 git submodule で、operation-check/GitHub-Wiki-test-public のsubmodule化を実施。
 localでの作業。
 
+・sub moduleの登録
 1.Submodule-testをclone
 2.gitbushなど、ターミナルを使用して  git submodule add <URL> 
 ```
@@ -23,7 +24,8 @@ localのフォルダ表示
 （組み込んでいるのは、最新ハッシュ（13dc99e））
 
 ここからcommit→pushすればGitHub上でも「特定ハッシュに対してのみ」module化が可能。
-
+また、組み込めるrepositoryについてはアクセス権の問題はあるかも知れないが、private repositoryでも可能だった。
+ 
 
 ・sub moduleの更新
   submoduleは特定ハッシュに対して行うため、基本的に自動更新はされない。
@@ -45,6 +47,27 @@ Submodule path 'GitHub-Wiki-test-public': checked out 'bb20d0d36411cd0f276af8843
 GitHub上の表示
 ![image](https://user-images.githubusercontent.com/85093305/148143221-091aeb52-9c30-4767-bfab-6a6f2ac64c98.png)
     
-※対象がpublicの場合はあまり難しい感じではなかった。
-  対象がprivateの場合については別途確認をする。
-  また、組み込み先がprivateの場合も別途確認を実施する。
+
+・sub moduleの削除
+A.リポジトリとして登録済の場合
+
+$ git submodule deinit -f [sub moduleのlocalpath]
+```
+$ git submodule deinit -f sub-m-test
+Cleared directory 'sub-m-test'
+Submodule 'sub-m-test' (https://github.com/operation-check/sub-m-test.git) unregistered for path 'sub-m-test'
+```
+
+$ git rm -f [sub moduleのlocalpath]
+```
+$ git rm -f sub-m-test
+rm 'sub-m-test'
+```  
+
+rm -rf .git/modules/[sub moduleのlocalpath]
+```
+$ rm -rf .git/modules/sub-m-test
+
+```
+以上の操作でlocalから削除される。
+
