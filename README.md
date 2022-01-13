@@ -71,3 +71,19 @@ $ rm -rf .git/modules/sub-m-test
 ```
 以上の操作でlocalから削除される。
 
+
+B.リポジトリ未登録の場合
+リポジトリ未登録の場合は以下の順番で削除ができる。
+ （ただし実動作は未確認）
+```
+git reset
+rm -rf .git/modules/[sub moduleのlocalpath]
+
+# .gitmodulesを戻す
+git config --local --remove-section submodule.[sub moduleのlocalpath]
+git config -f .gitmodules --remove-section submodule.[sub moduleのlocalpath]
+
+# .gitmodulesも削除する場合
+rm .gitmodules
+```
+
