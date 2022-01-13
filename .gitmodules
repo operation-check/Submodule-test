@@ -1,3 +1,6 @@
-[submodule "sub-m-test"]
-	path = sub-m-test
-	url = https://github.com/operation-check/sub-m-test.git
+[submodule "sub-m-test-pub"]
+	path = sub-m-test-pub
+	url = https://github.com/operation-check/sub-m-test-pub.git
+[submodule "sub-m-test-pvt"]
+	path = sub-m-test-pvt
+	url = https://github.com/operation-check/sub-m-test-pvt.git
